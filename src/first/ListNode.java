@@ -26,7 +26,10 @@ public class ListNode {
             stringBuilder.append(temp.val);
             temp = temp.next;
         }
-        return "ListNode{" + stringBuilder.substring(1) +
-                '}';
+        if (stringBuilder.length() > 0) {
+            return "[" + stringBuilder.substring(1) +
+                    ']';
+        }
+        return "[]";
     }
 }
